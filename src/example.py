@@ -24,6 +24,9 @@ def highest_running_average(numbers):
 def generate_numbers(n):
     return random.sample(range(1, 1000), n)
 
+def generate_numbers_with_zero(n):
+    return random.sample(range(0, 9), n)
+
 if __name__ == '__main__':
     numbers = generate_numbers(100)
     print("Numbers: ", numbers)
